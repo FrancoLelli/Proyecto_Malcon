@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-@font-face {
-
-    font-family: Arial, Helvetica, sans-serif;
-    
-    src: url('../arialic-hollow/Arialic\ Hollow.ttf');
-    
-    }
-
 html {
     scroll-behavior: smooth;
 }
@@ -115,6 +107,7 @@ a{
     justify-content: center;
 }
 
+
 .section1{
     text-shadow: -1px 1px 0 rgb(103, 102, 102),
                           1px 1px 0 rgb(103, 102, 102),
@@ -124,6 +117,86 @@ a{
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
 }
+
+.main2{
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    color: black;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main3{
+    position: absolute;
+    width: 100%;
+    top: 90%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 10px 30px;
+}
+
+.main3 p{
+    font-size: 20px;
+}
+
+.main3 .slider{
+    display: none;
+}
+
+.section2{
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+.divImg{
+    top: 30px;
+    width: 100%;
+    position: relative;
+}
+
+.img4{
+    display: none;
+}
+
+.img{
+    border:2px solid #4d4a4a;
+    padding: 5px;
+    width: 600px;
+    height: 450px;
+    filter: brightness(50%);
+    border-radius: 5px;
+    top: -15px;
+    left: 400px;
+    position: absolute;
+}
+
+.img2{
+    border:2px solid #4d4a4a;
+    padding: 5px;
+    width: 600px;
+    height: 450px;
+    filter: brightness(50%);
+    border-radius: 5px;
+    top: 50px;
+    left: 100px;
+}
+
+.img3{
+    border:2px solid #4d4a4a;
+    padding: 5px;
+    width: 600px;
+    height: 450px;
+    filter: brightness(50%);
+    border-radius: 5px;
+    top: 51px;
+    right:400px;
+    position: absolute;
+}
+
 
 .linea:after{
     content: "";
@@ -158,6 +231,31 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 1450px){
+    .main2{
+        display: none;
+    
+    }
+
+    .main3{
+        position: absolute;
+        width: 100%;
+        top: 30%;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px 30px;
+        overflow: hidden;
+    }
+    
+    .main3 p{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
 }
 
 @media screen and (max-width: 800px){
